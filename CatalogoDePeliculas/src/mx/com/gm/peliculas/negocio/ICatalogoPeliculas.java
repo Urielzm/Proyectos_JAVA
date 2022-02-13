@@ -1,6 +1,5 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
+ * Capa de nivel de servicio o negocios
  */
 package mx.com.gm.peliculas.negocio;
 
@@ -10,12 +9,14 @@ package mx.com.gm.peliculas.negocio;
  */
 public interface ICatalogoPeliculas {
     
-    void agregarPelicula(String nombrePelicula, String nombreArchivo);
+    String NOMBRE_RECURSO = "PELICULAS.txt";
     
-    void listaPeliculas(String nombreArchivo);
+    void agregarPelicula(String nombrePelicula);
     
-    void buscarPelicula(String nombreArchivo, String buscar);
+    void listaPeliculas();
     
-    void iniciarArchivo(String nombreArchivo);
+    void buscarPelicula(String buscar);
+    
+    void iniciarCatalogoPeliculas();
     
 }
