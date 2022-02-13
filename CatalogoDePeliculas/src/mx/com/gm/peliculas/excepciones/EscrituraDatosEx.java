@@ -8,6 +8,14 @@ package mx.com.gm.peliculas.excepciones;
  *
  * @author uriel
  */
-public class EscrituraDatosEx {
+public class EscrituraDatosEx extends AccesoDatosEx{
+    /**
+     * Extendemos de la clase AccesoDatosEx
+     * @param mensaje 
+     */
+    
+    public EscrituraDatosEx(String mensaje) {
+        super(mensaje);
+    }
     
 }
