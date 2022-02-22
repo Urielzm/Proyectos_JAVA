@@ -1,7 +1,9 @@
 package test;
 
 import datos.PersonaDAO;
+import datos.UsuarioDAO;
 import domain.Persona;
+import domain.Usuario;
 import java.util.*;
 
 /**
@@ -32,8 +34,8 @@ public class testManejoPersonas {
 //        Persona personaModificar = new Persona(4, "Juan Carlos", "Esparza", "jcesparza@mail.com", "556677882233");
 //        personaDAO.actualizar(personaModificar);
         
-        Persona personaEliminar = new Persona(4);
-        personaDAO.eliminar(personaEliminar);
+//        Persona personaEliminar = new Persona(4);
+//        personaDAO.eliminar(personaEliminar);
         
         /**
          * Regresamos una lista de personas y la recorremos con una funcion
@@ -48,5 +50,13 @@ public class testManejoPersonas {
             System.out.println("persona = " + persona);
         });
 
+        /**
+         * USARIO
+         */
+        UsuarioDAO usuarioDAO = new UsuarioDAO();
+        List<Usuario> usuarios = usuarioDAO.seleccionar();
+        usuarios.forEach(usuario -> {
+            System.out.println("usuario = " + usuario);
+        });
     }
 }

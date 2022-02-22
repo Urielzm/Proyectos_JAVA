@@ -15,6 +15,9 @@ public class Persona {
     private String email;
     private String telefono;
 
+    /**
+     * Metodo para listar personas.
+     */
     public Persona() {
     }
 
@@ -28,6 +31,7 @@ public class Persona {
 
     /**
      * Para hacer el Insert de un registro no necesitamso el ID
+     * 
      * @param nombre
      * @param apellido
      * @param email
