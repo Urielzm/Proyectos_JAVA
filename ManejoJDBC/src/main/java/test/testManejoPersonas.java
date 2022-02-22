@@ -54,9 +54,23 @@ public class testManejoPersonas {
          * USARIO
          */
         UsuarioDAO usuarioDAO = new UsuarioDAO();
+        
+//        Usuario usuarioInsertar = new Usuario("Jayline2", "4321");
+//        usuarioDAO.insertar(usuarioInsertar);
+
+//        Usuario usuarioActualizar = new Usuario(2,"Jayline.Ojeda", "43215");
+//        usuarioDAO.actualizar(usuarioActualizar);
+        
+//        Usuario usuarioActualizar = new Usuario(1,"Uriel.Zagoya", "43215");
+//        usuarioDAO.actualizar(usuarioActualizar);
+        
+//        Usuario usuarioEliminar = new Usuario(3);
+//        usuarioDAO.eliminar(usuarioEliminar);
+        
         List<Usuario> usuarios = usuarioDAO.seleccionar();
         usuarios.forEach(usuario -> {
             System.out.println("usuario = " + usuario);
         });
+        
     }
 }

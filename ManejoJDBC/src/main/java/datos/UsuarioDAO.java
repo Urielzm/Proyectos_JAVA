@@ -17,7 +17,7 @@ public class UsuarioDAO {
             + " FROM usuario";
     
     private static final String SQL_INSERT = "INSERT INTO usuario (usuario, "
-            + " password) VALUES(?, ?, ?)";
+            + " password) VALUES(?, ?)";
     
     private static final String SQL_UPDATE = "UPDATE usuario SET usuario = ?, "
             + " password = ? WHERE id_usuario = ?";
